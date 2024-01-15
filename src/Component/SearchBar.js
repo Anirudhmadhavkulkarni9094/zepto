@@ -40,7 +40,7 @@ function SearchBar({ users }) {
           value={name}
           onChange={(e) => setName(e.target.value)}
           onKeyDown={handleBackspace}
-          className='outline-none w-44'
+          className='outline-none w-44 bottom-1 rounded-lg'
           onClick={() => setShowSuggestion(!showSuggestion)}
         />
         {(name.length > 0 || showSuggestion) && (
